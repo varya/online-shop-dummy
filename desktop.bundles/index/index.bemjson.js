@@ -8,6 +8,11 @@
         { elem: 'js', url:'_index.js'},
     ],
     content: [
-        'block content'
+        {
+            block: 'head'
+        },
+        {
+            block: 'foot'
+        }
     ]
 })
