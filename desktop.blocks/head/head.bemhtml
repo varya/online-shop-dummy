@@ -30,7 +30,23 @@ block head, default, !this._wrap: {
                     {
                         elem: 'cell',
                         elemMods: { position: 'r'},
-                        content: 'User block here'
+                        content: {
+                            block: 'b-logo',
+                            content: {
+                                elem: 'link',
+                                url: 'http://bem.info',
+                                content: [
+                                    {
+                                        elem: 'icon',
+                                        url: '../../desktop.blocks/b-logo/b-logo.png'
+                                    },
+                                    {
+                                        elem: 'slogan',
+                                        content: 'A new way of thinking'
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
             }

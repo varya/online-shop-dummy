@@ -7,6 +7,9 @@
         {
             block: 'b-search',
             elems: ['layout']
+        },
+        {
+            block: 'b-logo'
         }
     ]
 })
