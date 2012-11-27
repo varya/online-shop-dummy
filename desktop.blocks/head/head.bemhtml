@@ -1,0 +1,39 @@
+block head, default, !this._wrap: {
+    applyCtx(
+        this._wrap = true,
+        this.ctx = {
+            block: 'b-layout-table',
+            mix: [ { block: 'head' } ],
+            mods: { layout: '70-30'},
+            content: {
+                elem: 'row',
+                content: [
+                    {
+                        elem: 'cell',
+                        content: {
+                            elem: 'inner',
+                            content: [
+                               {
+                                    block: 'b-search',
+                                    attrs: { action: '/search.xml' },
+                                    input: {
+                                        elem: 'input',
+                                        attrs: { value: 'Text' }
+                                    },
+                                    button: {
+                                        elem: 'button'
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        elem: 'cell',
+                        elemMods: { position: 'r'},
+                        content: 'User block here'
+                    }
+                ]
+            }
+        }
+    )
+}
