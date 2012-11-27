@@ -1,0 +1,47 @@
+block goods {
+
+    tag: 'ul'
+
+    content: {
+        var content = [];
+
+        this.ctx.goods.forEach(function(item){
+            content.push({
+                elem: 'item',
+                content: [
+                    {
+                        elem: 'title',
+                        content: item.title
+                    },
+                    {
+                        elem: 'image',
+                        url: item.image
+                    },
+                    {
+                        elem: 'price',
+                        content: item.price
+                    }
+                ]
+            });
+        })
+
+        return content;
+    }
+
+    elem item, tag: 'li'
+
+    elem title, tag: 'span'
+
+    elem image {
+
+        tag: 'img'
+
+        attrs: {
+            src: this.ctx.url
+        }
+
+    }
+
+    elem price, tag: 'span'
+
+}
