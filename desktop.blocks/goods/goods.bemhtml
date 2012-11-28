@@ -28,6 +28,7 @@ block goods {
                         elem: 'price',
                         content: {
                             block: 'b-link',
+                            mix: [{ block: 'goods', elem: 'link' }],
                             url: item.url,
                             content: item.price
                         }
