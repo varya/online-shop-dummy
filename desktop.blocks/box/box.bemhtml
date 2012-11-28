@@ -1,7 +1,0 @@
-block box {
-
-    js: true
-
-    elem switcher, tag: 'span'
-
-}
