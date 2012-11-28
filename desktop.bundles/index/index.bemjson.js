@@ -48,7 +48,16 @@
             ]
         },
         {
-            block: 'foot'
+            block: 'foot',
+            content: [
+                '© ',
+                {
+                    block: 'b-link',
+                    url: 'http://bem.info',
+                    content: 'BEM team'
+                },
+                ' 2012'
+            ]
         }
     ]
 })
