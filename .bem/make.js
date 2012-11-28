@@ -21,6 +21,10 @@ MAKE.decl('Arch', {
             'bemhtml' : {
                 type: 'git',
                 url: 'git://github.com/bem/bemhtml.git'
+            },
+            'john-lib' : {
+                type: 'git',
+                url: 'git://github.com/john-johnson/j.git'
             }
         };
 
