@@ -40,3 +40,30 @@
          -o-transform:skew(8deg) rotate(3deg);
             transform:skew(8deg) rotate(3deg);
 }
+
+.box__switcher
+{
+    width: 0;
+    height: 0;
+
+
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+
+    border-bottom: 7px solid #c0c0c0;
+
+    float: right;
+
+    cursor: pointer;
+}
+
+.box_closed_yes *:not(.box__switcher)
+{
+    display: none;
+}
+
+.box_closed_yes .box__switcher
+{
+    border-top: 7px solid #c0c0c0;
+    border-bottom: 0;
+}
