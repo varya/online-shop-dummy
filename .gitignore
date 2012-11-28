@@ -9,4 +9,8 @@ node_modules
 .bem/cache
 desktop.bundles/*/*.*
 !desktop.bundles/*/*.bemjson.js
+!desktop.bundles/*/*.html
+!desktop.bundles/*/_*.css
+!desktop.bundles/*/_*.ie.css
+!desktop.bundles/*/_*.js
 !desktop.bundles/.bem/*
