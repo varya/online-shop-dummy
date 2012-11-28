@@ -1,0 +1,73 @@
+.goods
+{
+    margin: 20px 0;
+    padding: 0;
+
+    list-style: none;
+    text-align: justify;
+}
+
+.goods__item
+{
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+    text-align: left;
+
+    width: 150px;
+    padding: 15px 30px 0 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.goods__title
+{
+    font-size: 13px;
+
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+
+    margin: 0;
+    padding: 0;
+
+    white-space: nowrap;
+}
+
+.goods__price
+{
+    position: relative;
+
+    display: block;
+}
+
+.goods__price .b-link
+{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    background: #b39832;
+    color: #fff;
+    padding: 12px 10px;
+    margin: 10px -30px 0 -30px;
+
+    -webkit-transition: background 0.2s ease-in;
+       -moz-transition: background 0.2s ease-in;
+        -ms-transition: background 0.2s ease-in;
+         -o-transition: background 0.2s ease-in;
+            transition: background 0.2s ease-in;
+}
+
+.goods__price .b-link:hover
+{
+    background: #44a622;
+}
+
+.goods__sizer
+{
+    display: inline-block;
+    width: 150px;
+    padding: 0 30px;
+}
