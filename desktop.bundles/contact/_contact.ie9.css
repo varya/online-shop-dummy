@@ -1,0 +1,226 @@
+/* contact.css begin */
+/* ../../desktop.blocks/b-page/b-page.css begin */
+.b-page__body
+{
+    font: 13px Helvetica, Arial, sans-serif;
+    background: #979797;
+}
+
+.b-page__body-i
+{
+    width: 800px;
+    max-width: 100%;
+    margin: 2em auto;
+    padding: 1.6em;
+}
+
+/* ../../desktop.blocks/b-page/b-page.css end */
+
+/* ../../desktop.blocks/head/head.css begin */
+.head
+{
+    border: lightblue 3px solid;
+}
+
+/* ../../desktop.blocks/head/head.css end */
+
+/* ../../bem-bl/blocks-desktop/b-search/b-search.css begin */
+.b-search__input
+{
+    width: 100%;
+    margin: 0;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.b-search__button
+{
+    margin: 0;
+}
+/* ../../bem-bl/blocks-desktop/b-search/b-search.css end */
+
+/* ../../desktop.blocks/b-search/b-search.css begin */
+.b-search
+{
+    position: relative;
+    top: 44px;
+}
+
+.b-search__input,
+.b-search__button
+{
+    font-size: 16px;
+}
+
+/* ../../desktop.blocks/b-search/b-search.css end */
+
+/* ../../bem-bl/blocks-desktop/b-layout-table/b-layout-table.css begin */
+.b-layout-table
+{
+    font-size: 100%;
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.b-layout-table__gap,
+.b-layout-table__cell
+{
+    padding: 0;
+
+    vertical-align: top;
+}
+
+/* ../../bem-bl/blocks-desktop/b-layout-table/b-layout-table.css end */
+
+/* ../../bem-bl/blocks-desktop/b-search/__layout/b-search__layout.css begin */
+.b-search__layout-input
+{
+    width: 100%;
+
+    vertical-align: middle;
+}
+
+.b-search__layout-button
+{
+    padding-left: 6px;
+
+    vertical-align: middle;
+}
+
+/* ../../bem-bl/blocks-desktop/b-search/__layout/b-search__layout.css end */
+
+/* ../../john-lib/blocks/box/box.css begin */
+/*
+    this style taken from this demo
+    http://www.paulund.co.uk/creating-different-css3-box-shadows-effects
+ */
+.box
+{
+    position:relative;
+
+    padding: 20px 40px;
+
+    background: #FFF;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.box:before, .box:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+.box:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.box__switcher
+{
+    width: 0;
+    height: 0;
+
+
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+
+    border-bottom: 7px solid #c0c0c0;
+
+    float: right;
+
+    cursor: pointer;
+}
+
+.box_closed_yes *:not(.box__switcher)
+{
+    display: none;
+}
+
+.box_closed_yes .box__switcher
+{
+    border-top: 7px solid #c0c0c0;
+    border-bottom: 0;
+}
+
+/* ../../john-lib/blocks/box/box.css end */
+
+/* ../../desktop.blocks/layout/layout.css begin */
+.layout
+{
+    position: relative;
+    min-height: 130px;
+}
+
+.layout__left
+{
+    padding-right: 200px;
+}
+
+.layout__right
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 150px;
+}
+
+/* ../../desktop.blocks/layout/layout.css end */
+
+/* ../../bem-bl/blocks-desktop/b-icon/b-icon.css begin */
+.b-icon
+{
+    font: 0/0 a;
+
+    border: 0;
+
+}
+
+/* ../../bem-bl/blocks-desktop/b-icon/b-icon.css end */
+
+/* ../../desktop.blocks/b-logo/b-logo.css begin */
+
+.b-logo .b-link
+{
+    color: #666;
+    text-decoration: none;
+}
+
+.b-logo__slogan
+{
+    font: 11px Verdana, sans-serif;
+
+    white-space: nowrap;
+    letter-spacing: 1px;
+
+    display: block;
+
+    margin-top: 5px;
+}
+/* ../../desktop.blocks/b-logo/b-logo.css end */
+
+
+/* contact.css end */
+
