@@ -13,6 +13,7 @@ block goods {
 
             content.push({
                 elem: 'item',
+                mix: [{ block: 'box' }],
                 mods: mods,
                 content: [
                     {
@@ -25,18 +26,26 @@ block goods {
                     },
                     {
                         elem: 'price',
-                        content: item.price
+                        content: {
+                            block: 'b-link',
+                            url: item.url,
+                            content: item.price
+                        }
                     }
                 ]
             });
-        })
+
+            content.push(' ');
+        });
+
+        for(var i = 0; i < 10; i++) content.push({ elem: 'sizer' });
 
         return content;
     }
 
     elem item, tag: 'li'
 
-    elem title, tag: 'span'
+    elem title, tag: 'h3'
 
     elem image {
 
