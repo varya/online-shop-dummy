@@ -615,6 +615,19 @@
 
 /* index.css end */
 
+/* ../../john-lib/blocks/box/box.ie.css begin */
+.box_closed_yes *
+{
+    display: none;
+}
+
+.box_closed_yes .box__switcher
+{
+    display: inline-block;
+}
+
+/* ../../john-lib/blocks/box/box.ie.css end */
+
 /* ../../desktop.blocks/goods/goods.ie.css begin */
 .goods
 {
