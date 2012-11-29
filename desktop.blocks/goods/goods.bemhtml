@@ -46,6 +46,8 @@ block goods {
 
     elem item, tag: 'li'
 
+    elem sizer, tag: 'li'
+
     elem title, tag: 'h3'
 
     elem image {
