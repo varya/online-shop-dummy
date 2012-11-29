@@ -12,7 +12,7 @@ var BEMHTML = (function(exports) {
                     } ];
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "head") {
                 if (!!this.elem === false) {
@@ -22,7 +22,7 @@ var BEMHTML = (function(exports) {
                     } ];
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-page") {
                 if (!!this.elem === false) {
@@ -31,10 +31,10 @@ var BEMHTML = (function(exports) {
                     } ];
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else if (__t === "tag") {
             var __t = this.block;
@@ -49,7 +49,7 @@ var BEMHTML = (function(exports) {
                 } else if (__t === "title") {
                     return "h3";
                     return;
-                } else if (__t === "item") {
+                } else if (__t === "sizer" || __t === "item") {
                     return "li";
                     return;
                 } else {
@@ -57,7 +57,7 @@ var BEMHTML = (function(exports) {
                         return "ul";
                         return;
                     } else {
-                        return $259.call(this);
+                        return $261.call(this);
                     }
                 }
             } else if (__t === "b-icon") {
@@ -65,21 +65,21 @@ var BEMHTML = (function(exports) {
                     return "img";
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-link") {
                 if (!!this.elem === false) {
                     return "a";
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "box") {
                 if (this.elem === "switcher") {
                     return "span";
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-layout-table") {
                 if (!(this.elem === "cell" || this.elem === "gap") === false) {
@@ -94,7 +94,7 @@ var BEMHTML = (function(exports) {
                             return "table";
                             return;
                         } else {
-                            return $259.call(this);
+                            return $261.call(this);
                         }
                     }
                 }
@@ -108,7 +108,7 @@ var BEMHTML = (function(exports) {
                         return "form";
                         return;
                     } else {
-                        return $259.call(this);
+                        return $261.call(this);
                     }
                 }
             } else if (__t === "b-page") {
@@ -141,7 +141,7 @@ var BEMHTML = (function(exports) {
                         return "body";
                         return;
                     } else {
-                        return $259.call(this);
+                        return $261.call(this);
                     }
                 }
             } else if (__t === "i-ua") {
@@ -149,10 +149,10 @@ var BEMHTML = (function(exports) {
                     return "script";
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else if (__t === "attrs") {
             var __t = this.block;
@@ -163,7 +163,7 @@ var BEMHTML = (function(exports) {
                     };
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-icon") {
                 if (!!this.elem === false) {
@@ -178,13 +178,13 @@ var BEMHTML = (function(exports) {
                     return _$1na;
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-link") {
                 if (!!this.elem === false) {
-                    return $112.call(this);
+                    return $114.call(this);
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-layout-table") {
                 if (!(this.elem === "cell" || this.elem === "gap") === false) {
@@ -195,7 +195,7 @@ var BEMHTML = (function(exports) {
                     return _$1ha;
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-search") {
                 var __t = this.elem;
@@ -211,7 +211,7 @@ var BEMHTML = (function(exports) {
                     };
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-page") {
                 var __t = this.elem;
@@ -222,7 +222,7 @@ var BEMHTML = (function(exports) {
                         };
                         return;
                     } else {
-                        return $259.call(this);
+                        return $261.call(this);
                     }
                 } else if (__t === "css") {
                     if (!this.ctx.url === false) {
@@ -232,7 +232,7 @@ var BEMHTML = (function(exports) {
                         };
                         return;
                     } else {
-                        return $259.call(this);
+                        return $261.call(this);
                     }
                 } else if (__t === "favicon") {
                     return {
@@ -244,32 +244,32 @@ var BEMHTML = (function(exports) {
                     return this.ctx.attrs;
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else if (__t === "content") {
             var __t = this.block;
             if (__t === "goods") {
                 if (!!this.elem === false) {
-                    return $149.call(this);
+                    return $151.call(this);
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-search") {
                 if (!this.ctx.button === false) {
                     if (!this.ctx.input === false) {
                         if (!!this.elem === false) {
-                            return $156.call(this);
+                            return $158.call(this);
                         } else {
-                            return $259.call(this);
+                            return $261.call(this);
                         }
                     } else {
-                        return $259.call(this);
+                        return $261.call(this);
                     }
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "head") {
                 if (!!this.elem === false) {
@@ -315,7 +315,7 @@ var BEMHTML = (function(exports) {
                     } ];
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-page") {
                 if (!!this.elem === false) {
@@ -325,17 +325,17 @@ var BEMHTML = (function(exports) {
                     };
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "i-ua") {
                 if (!!this.elem === false) {
                     return [ ";(function(d,e,c,r){", "e=d.documentElement;", 'c="className";', 'r="replace";', 'e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");', 'if(d.compatMode!="CSS1Compat")', 'e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")', "})(document);" ].join("");
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else if (__t === "default") {
             var __t = this.block;
@@ -365,23 +365,23 @@ var BEMHTML = (function(exports) {
                     }
                     return;
                 } else if (__t === "link") {
-                    return $185.call(this);
+                    return $187.call(this);
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "b-page") {
                 if (this.elem === "css") {
                     if (!this.ctx.hasOwnProperty("ie") === false) {
                         if (!!this.ctx._ieCommented === false) {
-                            return $192.call(this);
+                            return $194.call(this);
                         } else {
-                            return $197.call(this);
+                            return $199.call(this);
                         }
                     } else {
-                        return $197.call(this);
+                        return $199.call(this);
                     }
                 } else {
-                    return $197.call(this);
+                    return $199.call(this);
                 }
             } else if (__t === "i-jquery") {
                 if (this.elem === "core") {
@@ -393,10 +393,10 @@ var BEMHTML = (function(exports) {
                     }, __r38 = apply.call(__this), this._mode = __r36, this.ctx = __r37, "", __r38;
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else if (__t === "js") {
             if (this.block === "box") {
@@ -404,10 +404,10 @@ var BEMHTML = (function(exports) {
                     return true;
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else if (__t === "bem") {
             var __t = this.block;
@@ -417,17 +417,17 @@ var BEMHTML = (function(exports) {
                     return false;
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else if (__t === "i-ua") {
                 if (!!this.elem === false) {
                     return false;
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else if (__t === "cls") {
             if (this.block === "b-page") {
@@ -435,10 +435,10 @@ var BEMHTML = (function(exports) {
                     return "i-ua_js_no i-ua_css_standard";
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else if (__t === "doctype") {
             if (this.block === "b-page") {
@@ -446,16 +446,16 @@ var BEMHTML = (function(exports) {
                     return this.ctx.doctype || "<!DOCTYPE html>";
                     return;
                 } else {
-                    return $259.call(this);
+                    return $261.call(this);
                 }
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else {
-            return $259.call(this);
+            return $261.call(this);
         }
     }
-    function $112() {
+    function $114() {
         var __this = this;
         var __r52, __r53, __r54, __r55;
         var _$1lctx = this.ctx, _$1lprops = [ "title", "target" ], _$1lp = typeof _$1lctx.url, _$1la = {
@@ -467,7 +467,7 @@ var BEMHTML = (function(exports) {
         return _$1la;
         return;
     }
-    function $149() {
+    function $151() {
         var _$1rcontent = [];
         this.ctx.goods.forEach(function(item) {
             var mods = {};
@@ -511,7 +511,7 @@ var BEMHTML = (function(exports) {
         return _$1rcontent;
         return;
     }
-    function $156() {
+    function $158() {
         this.ctx.input.block = "b-search";
         this.ctx.button.block = "b-search";
         var _$19c = {
@@ -554,7 +554,7 @@ var BEMHTML = (function(exports) {
         return _$19c;
         return;
     }
-    function $185() {
+    function $187() {
         var _$1octx = this.ctx, _$1ocontent = _$1octx.content || _$1octx.icon;
         _$1octx.icon && (_$1octx.icon.block = "b-logo");
         if (_$1octx.content instanceof Array) {
@@ -590,7 +590,7 @@ var BEMHTML = (function(exports) {
         }
         return;
     }
-    function $192() {
+    function $194() {
         var __this = this;
         var _$10ie = this.ctx.ie;
         if (_$10ie === true) {
@@ -632,18 +632,18 @@ var BEMHTML = (function(exports) {
         }
         return;
     }
-    function $197() {
-        if (!(this["__$anflg"] !== 866397203) === false) {
+    function $199() {
+        if (!(this["__$anflg"] !== 553096144) === false) {
             if (!!this.elem === false) {
-                return $200.call(this);
+                return $202.call(this);
             } else {
-                return $259.call(this);
+                return $261.call(this);
             }
         } else {
-            return $259.call(this);
+            return $261.call(this);
         }
     }
-    function $200() {
+    function $202() {
         var __this = this;
         var __r39, __r40;
         var _$jctx = this.ctx, _$jdtype = ("", __r39 = this._mode, this._mode = "doctype", __r40 = apply.call(__this), this._mode = __r39, "", __r40), _$jbuf = [ _$jdtype, {
@@ -675,7 +675,7 @@ var BEMHTML = (function(exports) {
         {
             "";
             var __r41 = this["__$anflg"];
-            this["__$anflg"] = 866397203;
+            this["__$anflg"] = 553096144;
             {
                 "";
                 var __r42 = this.ctx;
@@ -693,9 +693,9 @@ var BEMHTML = (function(exports) {
         undefined;
         return;
     }
-    function $259() {
+    function $261() {
         if (!!this._start === false) {
-            return $261.call(this);
+            return $263.call(this);
         } else {
             var __t = this._mode;
             if (__t === "content") {
@@ -705,7 +705,7 @@ var BEMHTML = (function(exports) {
                 return undefined;
                 return;
             } else if (__t === "default") {
-                return $280.call(this);
+                return $282.call(this);
             } else {
                 if (!this._.isSimple(this.ctx) === false) {
                     if (!!this._mode === false) {
@@ -714,15 +714,15 @@ var BEMHTML = (function(exports) {
                         (_$3ctx && _$3ctx !== true || _$3ctx === 0) && this._buf.push(_$3ctx);
                         return;
                     } else {
-                        return $287.call(this);
+                        return $289.call(this);
                     }
                 } else {
-                    return $287.call(this);
+                    return $289.call(this);
                 }
             }
         }
     }
-    function $261() {
+    function $263() {
         var _$dBEM_ = {}, _$dtoString = Object.prototype.toString, _$dSHORT_TAGS = {
             area: 1,
             base: 1,
@@ -919,7 +919,7 @@ var BEMHTML = (function(exports) {
         return _$dctx._buf.join("");
         return;
     }
-    function $280() {
+    function $282() {
         var __this = this;
         var __r19, __r7, __r11, __r12, __r13, __r14, __r15, __r16, __r17, __r18, __r8, __r20, __r21, __r22, __r25, __r26, __r27, __r28, __r29, __r30;
         var _$4_this = this, _$4BEM_ = _$4_this.BEM, _$4v = this.ctx, _$4buf = this._buf, _$4tag;
@@ -1060,19 +1060,19 @@ var BEMHTML = (function(exports) {
         }
         return;
     }
-    function $287() {
+    function $289() {
         if (!!this._mode === false) {
             if (!!this.ctx === false) {
                 this._listLength--;
                 return;
             } else {
-                return $293.call(this);
+                return $295.call(this);
             }
         } else {
-            return $293.call(this);
+            return $295.call(this);
         }
     }
-    function $293() {
+    function $295() {
         var __this = this;
         if (!this._.isArray(this.ctx) === false) {
             if (!!this._mode === false) {
@@ -1096,16 +1096,16 @@ var BEMHTML = (function(exports) {
                 _$1prevNotNewList || (this.position = _$1prevPos);
                 return;
             } else {
-                return $299.call(this);
+                return $301.call(this);
             }
         } else {
-            return $299.call(this);
+            return $301.call(this);
         }
     }
-    function $299() {
+    function $301() {
         if (!true === false) {
             if (!!this._mode === false) {
-                return $302.call(this);
+                return $304.call(this);
             } else {
                 return $e.call(this);
             }
@@ -1113,7 +1113,7 @@ var BEMHTML = (function(exports) {
             return $e.call(this);
         }
     }
-    function $302() {
+    function $304() {
         var __this = this;
         var _$0vBlock = this.ctx.block, _$0vElem = this.ctx.elem, _$0block = this._currBlock || this.block;
         this.ctx || (this.ctx = {});

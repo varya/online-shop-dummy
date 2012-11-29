@@ -1,0 +1,11 @@
+.goods
+{
+    text-justify: distribute-all-lines;
+}
+
+.goods__item
+{
+    display: inline;
+
+    zoom: 1;
+}

@@ -306,3 +306,18 @@
 
 /* index.css end */
 
+/* ../../desktop.blocks/goods/goods.ie.css begin */
+.goods
+{
+    text-justify: distribute-all-lines;
+}
+
+.goods__item
+{
+    display: inline;
+
+    zoom: 1;
+}
+
+/* ../../desktop.blocks/goods/goods.ie.css end */
+
