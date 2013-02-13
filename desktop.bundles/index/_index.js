@@ -1004,6 +1004,13 @@ this.BEM = $.inherit($.observable, /** @lends BEM.prototype */ {
             });
         }
 
+        if(staticProps && typeof staticProps.live === 'boolean') {
+            var live = staticProps.live;
+            staticProps.live = function() {
+                return live;
+            };
+        }
+
         var block;
         decl.block == baseBlock._name?
             // makes a new "live" if the old one was already executed
@@ -2476,12 +2483,8 @@ var DOM = BEM.DOM = BEM.decl('i-bem__dom',/** @lends BEM.DOM.prototype */{
             var noLive = typeof res == 'undefined';
 
             if(noLive ^ heedLive) {
-                if($.isFunction(_this.live)) {
-                    res = _this.live() !== false;
-                    _this.live = function() {};
-                } else {
-                    res = _this.live;
-                }
+                res = _this.live() !== false;
+                _this.live = function() {};
             }
         }
 
@@ -2774,7 +2777,7 @@ var DOM = BEM.DOM = BEM.decl('i-bem__dom',/** @lends BEM.DOM.prototype */{
 
         var _this = this;
 
-        if(to.elem && to.elem.indexOf(' ') > 1) {
+        if(to.elem && to.elem.indexOf(' ') > 0) {
             to.elem.split(' ').forEach(function(elem) {
                 _this._liveClassBind(
                     buildClass(_this._name, elem, to.modName, to.modVal),
