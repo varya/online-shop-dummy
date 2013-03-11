@@ -11,7 +11,7 @@ exports.newFileContent = function (vars) {
         "    title: '{{bemBlockName}}',",
         "    head: [",
         "        { elem: 'css', url: '_{{bemBlockName}}.css', ie: false},",
-        "        { elem: 'css', url: '_{{bemBlockName}}.ie.css', ie: true },",
+        "        { elem: 'css', url: '_{{bemBlockName}}', ie: true },",
         "        { block: 'i-jquery', elem: 'core'},",
         "        { elem: 'js', url:'_{{bemBlockName}}.js'},",
         "    ],",

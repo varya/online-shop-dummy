@@ -1,4 +1,4 @@
-Minimal configs and folders to start BEM project
+Minimal configs and folders to start BEM project 
 ================================================
 
 ### Usage
