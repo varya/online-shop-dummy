@@ -3,8 +3,8 @@ Minimal configs and folders to start BEM project
 
 ### Usage
 
-    › git clone git://github.com/bem/project-stub.git
-    › cd project-stub
+    › git clone git@github.com:toivonen/online-shop-dummy.git
+    › cd online-shop-dummy
     › make
 
 This will install localy all project's dependencies from npm and starts local `bem server`
@@ -21,6 +21,15 @@ of your working copy. After that your could start server:
 `.profile` config:
 
     exports PATH=./node_modules/.bin:$PATH
+
+### Purpose
+
+The repository illustrates how to use the full BEM stack. The information is
+actual for Dec 2012.<br/>
+I recommend to check [Start developing BEM with
+project-stub](http://bem.info/articles/start-with-project-stub/) (or [Попробуй
+БЭМ на вкус](http://habrahabr.ru/post/162385/), in Russian) for step-by-step
+instruction.
 
 ---
 
